@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Alfred," />
 
 
 
@@ -123,14 +123,34 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Dante">
-<meta property="og:url" content="http://wongzhen.com/404.html">
+<meta name="description" content="从头构建一个“新建文件”功能的workflow文件自从使用了macbook之后，我便在网络上大量搜索能够有效提高效率的软件，大部分人的推荐都会有一个叫做Alfred的应用,这篇文章讲解了一个简单的alfredworkflow是如何写出来的。">
+<meta name="keywords" content="Alfred">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Alfred中Workflow的简单案例--新建文件">
+<meta property="og:url" content="http://wongzhen.com/2017/02/15/Alfred中Workflow的简单案例--新建文件/index.html">
 <meta property="og:site_name" content="Dante">
+<meta property="og:description" content="从头构建一个“新建文件”功能的workflow文件自从使用了macbook之后，我便在网络上大量搜索能够有效提高效率的软件，大部分人的推荐都会有一个叫做Alfred的应用,这篇文章讲解了一个简单的alfredworkflow是如何写出来的。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-10T04:35:20.356Z">
+<meta property="og:image" content="http://p1.bqimg.com/567571/d36aeede541d4bf5.jpg">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/26882432-file_1487174769202_ce79.png">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/58013354-file_1487174769325_9941.png">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/53721928-file_1487174769434_3714.png">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/43474222-file_1487174769549_7511.png">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/19235678-file_1487174769661_dd03.png">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/31050485-file_1487174769769_b525.png">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/71076089-file_1487174769891_15aee.png">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/60884195-file_1487174769997_f3e4.png">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/14867648-file_1487174770108_47af.png">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/58053887-file_1487174770213_a667.png">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/88176758-file_1487174770326_ed75.png">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/7473313-file_1487174770442_162a0.png">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/31097220-file_1487174770552_5a99.png">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/17-2-16/57507434-file_1487174770665_15b4b.png">
+<meta property="og:updated_time" content="2017-03-22T02:01:45.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dante">
+<meta name="twitter:title" content="Alfred中Workflow的简单案例--新建文件">
+<meta name="twitter:description" content="从头构建一个“新建文件”功能的workflow文件自从使用了macbook之后，我便在网络上大量搜索能够有效提高效率的软件，大部分人的推荐都会有一个叫做Alfred的应用,这篇文章讲解了一个简单的alfredworkflow是如何写出来的。">
+<meta name="twitter:image" content="http://p1.bqimg.com/567571/d36aeede541d4bf5.jpg">
 
 
 
@@ -160,13 +180,13 @@
 
 
 
-  <link rel="canonical" href="http://wongzhen.com/404.html"/>
+  <link rel="canonical" href="http://wongzhen.com/2017/02/15/Alfred中Workflow的简单案例--新建文件/"/>
 
 
 
 
 
-  <title> | Dante</title>
+  <title>Alfred中Workflow的简单案例--新建文件 | Dante</title>
   
 
 
@@ -350,48 +370,302 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wongzhen.com/2017/02/15/Alfred中Workflow的简单案例--新建文件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wong Zhen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dante">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline"></h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <!DOCTYPE HTML>
-<html>
-<head>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8;">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="robots" content="all">
-  <meta name="robots" content="index,follow">
-  <link rel="stylesheet" type="text/css" href="https://qzone.qq.com/gy/404/style/404style.css">
-</head>
-<body>
-  <script type="text/plain" src="http://www.qq.com/404/search_children.js" charset="utf-8" homepageurl="/" homepagename="回到我的主页">
-  </script>
-  <script src="https://qzone.qq.com/gy/404/data.js" charset="utf-8"></script>
-  <script src="https://qzone.qq.com/gy/404/page.js" charset="utf-8"></script>
-</body>
-</html>
+          <h1 class="post-title" itemprop="name headline">Alfred中Workflow的简单案例--新建文件</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-15T23:25:32+08:00">
+                2017-02-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/macOS/" itemprop="url" rel="index">
+                    <span itemprop="name">macOS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/02/15/Alfred中Workflow的简单案例--新建文件/" class="leancloud_visitors" data-flag-title="Alfred中Workflow的简单案例--新建文件">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  535
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="从头构建一个“新建文件”功能的workflow文件"><a href="#从头构建一个“新建文件”功能的workflow文件" class="headerlink" title="从头构建一个“新建文件”功能的workflow文件"></a>从头构建一个“新建文件”功能的workflow文件</h2><p>自从使用了macbook之后，我便在网络上大量搜索能够有效提高效率的软件，大部分人的推荐都会有一个叫做Alfred的应用,这篇文章讲解了一个简单的alfredworkflow是如何写出来的。<br><a id="more"></a></p>
+<h3 id="什么是Alfred"><a href="#什么是Alfred" class="headerlink" title="什么是Alfred?"></a>什么是Alfred?</h3><p>Alfred is an award-winning app for Mac OS X which boosts your efficiency with hotkeys, keywords, text expansion and more. Search your Mac and the web, and be more productive with custom actions to control your Mac.</p>
+<h5 id="点击进入Alfred官网"><a href="#点击进入Alfred官网" class="headerlink" title="点击进入Alfred官网"></a><a href="https://www.alfredapp.com" target="_blank" rel="noopener">点击进入Alfred官网</a></h5><h5 id="Workflow汇总"><a href="#Workflow汇总" class="headerlink" title="Workflow汇总"></a><a href="http://www.alfredworkflow.com/" target="_blank" rel="noopener">Workflow汇总</a></h5><hr>
+<p>直切主题，有自己写workflow想法的你肯定已经知道什么是Alfred、怎么使用Alfred，但实际上自己写一个workflow真的很简单。<br>下面我会一步一步的整理出我是如何写出这一简单的功能的。</p>
+<hr>
+<h3 id="1-设置Workflow-Defaults"><a href="#1-设置Workflow-Defaults" class="headerlink" title="1.设置Workflow Defaults"></a>1.设置Workflow Defaults</h3><h5 id="1-1打开Alfred"><a href="#1-1打开Alfred" class="headerlink" title="1.1打开Alfred"></a>1.1打开Alfred</h5><p>打开Alfred的Workflow，点击左下角的加号。<br><img src="http://p1.bqimg.com/567571/d36aeede541d4bf5.jpg" alt=""></p>
+<h5 id="1-2填写基本信息"><a href="#1-2填写基本信息" class="headerlink" title="1.2填写基本信息"></a>1.2填写基本信息</h5><p><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/26882432-file_1487174769202_ce79.png" alt=""></p>
+<hr>
+<h3 id="2-创建Blank-Workflow"><a href="#2-创建Blank-Workflow" class="headerlink" title="2.创建Blank Workflow"></a>2.创建Blank Workflow</h3><h5 id="2-1新建Blank-Workflow"><a href="#2-1新建Blank-Workflow" class="headerlink" title="2.1新建Blank Workflow"></a>2.1新建Blank Workflow</h5><p><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/58013354-file_1487174769325_9941.png" alt=""></p>
+<h5 id="2-2填写信息"><a href="#2-2填写信息" class="headerlink" title="2.2填写信息"></a>2.2填写信息</h5><p>分别为workflow名称、功能描述、功能分类，图中右上角的方框是workflow的Icon，支持拖拽找到图片直接拖进去即可。<br><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/53721928-file_1487174769434_3714.png" alt=""></p>
+<h5 id="2-3得到workflow界面"><a href="#2-3得到workflow界面" class="headerlink" title="2.3得到workflow界面"></a>2.3得到workflow界面</h5><p><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/43474222-file_1487174769549_7511.png" alt=""></p>
+<hr>
+<h3 id="3-制作Workflow"><a href="#3-制作Workflow" class="headerlink" title="3.制作Workflow"></a>3.制作Workflow</h3><h5 id="3-1-新建Inputs"><a href="#3-1-新建Inputs" class="headerlink" title="3.1 新建Inputs"></a>3.1 新建Inputs</h5><p>在界面上右键得到如下图结果，选择Inputs中的Keyword<br><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/19235678-file_1487174769661_dd03.png" alt=""></p>
+<h6 id="3-1-1-填写自定义信息"><a href="#3-1-1-填写自定义信息" class="headerlink" title="3.1.1 填写自定义信息"></a>3.1.1 填写自定义信息</h6><p>得到如下图结果，填写你想要设置的 激活词组 、标题以及简介，我这里定义成new。<br><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/31050485-file_1487174769769_b525.png" alt=""></p>
+<h6 id="3-1-2实际使用演示"><a href="#3-1-2实际使用演示" class="headerlink" title="3.1.2实际使用演示"></a>3.1.2实际使用演示</h6><p><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/71076089-file_1487174769891_15aee.png" alt=""></p>
+<h5 id="3-2-新建Actions"><a href="#3-2-新建Actions" class="headerlink" title="3.2 新建Actions"></a>3.2 新建Actions</h5><p>在界面上右键得到如下图结果，选择Actions中的Run NSAppleScript<br><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/60884195-file_1487174769997_f3e4.png" alt=""></p>
+<h6 id="3-2-1-编辑代码"><a href="#3-2-1-编辑代码" class="headerlink" title="3.2.1 编辑代码"></a>3.2.1 编辑代码</h6><p>双击得到如下图结果，接着双击转到代码编辑页面<br><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/14867648-file_1487174770108_47af.png" alt=""><br><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/58053887-file_1487174770213_a667.png" alt=""><br>将your script here更换成你想要实现的功能的代码即可,当然此处只能用Apple的script来写。</p>
+<p>此处我的代码是</p>
+<pre><code>on alfred_script(q)
+
+tell application &quot;Finder&quot;
+set selection to make new file at (get insertion location)
+end tell
+
+end alfred_script
+</code></pre><p><strong>如果想用其他语言在请选择在3.2时选择Run Script即可，可以自己选择所用语言，如下图</strong><br><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/88176758-file_1487174770326_ed75.png" alt=""></p>
+<h6 id="3-2-2连接模块"><a href="#3-2-2连接模块" class="headerlink" title="3.2.2连接模块"></a>3.2.2连接模块</h6><p><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/7473313-file_1487174770442_162a0.png" alt=""></p>
+<hr>
+<h3 id="4-结果"><a href="#4-结果" class="headerlink" title="4.结果"></a>4.结果</h3><p><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/31097220-file_1487174770552_5a99.png" alt=""></p>
+<p><img src="http://olfa3o6q1.bkt.clouddn.com/17-2-16/57507434-file_1487174770665_15b4b.png" alt=""></p>
+<h3 id="5-附导出文件"><a href="#5-附导出文件" class="headerlink" title="5.附导出文件"></a>5.附导出文件</h3><p><a href="https://github.com/DanterM/DanterM.github.io/raw/master/new-file.alfredworkflow" target="_blank" rel="noopener">new-file.alfredworkflow</a></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="Wong Zhen 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Wong Zhen 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Alfred/" rel="tag"># Alfred</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/15/Markdown语法简介/" rel="next" title="Markdown语法简介">
+                <i class="fa fa-chevron-left"></i> Markdown语法简介
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/19/Mac中Sublime-Text3汉化/" rel="prev" title="Mac Sublime Text3的汉化">
+                Mac Sublime Text3的汉化 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
   </div>
 
 
@@ -426,8 +700,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -517,6 +800,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#从头构建一个“新建文件”功能的workflow文件"><span class="nav-number">1.</span> <span class="nav-text">从头构建一个“新建文件”功能的workflow文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是Alfred"><span class="nav-number">1.1.</span> <span class="nav-text">什么是Alfred?</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#点击进入Alfred官网"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">点击进入Alfred官网</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Workflow汇总"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">Workflow汇总</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-设置Workflow-Defaults"><span class="nav-number">1.2.</span> <span class="nav-text">1.设置Workflow Defaults</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1打开Alfred"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">1.1打开Alfred</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-2填写基本信息"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">1.2填写基本信息</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-创建Blank-Workflow"><span class="nav-number">1.3.</span> <span class="nav-text">2.创建Blank Workflow</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1新建Blank-Workflow"><span class="nav-number">1.3.0.1.</span> <span class="nav-text">2.1新建Blank Workflow</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2填写信息"><span class="nav-number">1.3.0.2.</span> <span class="nav-text">2.2填写信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3得到workflow界面"><span class="nav-number">1.3.0.3.</span> <span class="nav-text">2.3得到workflow界面</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-制作Workflow"><span class="nav-number">1.4.</span> <span class="nav-text">3.制作Workflow</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1-新建Inputs"><span class="nav-number">1.4.0.1.</span> <span class="nav-text">3.1 新建Inputs</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#3-1-1-填写自定义信息"><span class="nav-number">1.4.0.1.1.</span> <span class="nav-text">3.1.1 填写自定义信息</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-1-2实际使用演示"><span class="nav-number">1.4.0.1.2.</span> <span class="nav-text">3.1.2实际使用演示</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-新建Actions"><span class="nav-number">1.4.0.2.</span> <span class="nav-text">3.2 新建Actions</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#3-2-1-编辑代码"><span class="nav-number">1.4.0.2.1.</span> <span class="nav-text">3.2.1 编辑代码</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-2-2连接模块"><span class="nav-number">1.4.0.2.2.</span> <span class="nav-text">3.2.2连接模块</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-结果"><span class="nav-number">1.5.</span> <span class="nav-text">4.结果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-附导出文件"><span class="nav-number">1.6.</span> <span class="nav-text">5.附导出文件</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

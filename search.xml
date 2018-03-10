@@ -5,4 +5,97 @@
     <url>%2F2018%2F03%2F10%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
+  <entry>
+    <title><![CDATA[Mac中常用的操作]]></title>
+    <url>%2F2017%2F11%2F27%2FMac%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[显示/隐藏 隐藏文件：Command+Shift+. 再按一次即可恢复。 在终端（Terminal）输入如下命令，即可显示隐藏文件和文件defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder 如需再次隐藏原本隐藏的文件和文件夹，可以输入如下命令 defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder Finder下使用Command+Shift+G 可以前往任何文件夹，包括隐藏文件夹。 更换JAVA版本 （控制台复制代码，更改对应版本号回车即可）export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.x.x_xxx.jdk/Contents/Home 新建Hexo文章 进入到对应博客目录 cd blog 或 cd DanterM。 新建文章文件hexo n &quot;文章名称&quot;。 部署上传文章hexo d g]]></content>
+      <categories>
+        <category>macOS</category>
+      </categories>
+      <tags>
+        <tag>macOs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[极高学习能力的基础是什么]]></title>
+    <url>%2F2017%2F04%2F14%2F%E6%9E%81%E9%AB%98%E5%AD%A6%E4%B9%A0%E8%83%BD%E5%8A%9B%E7%9A%84%E5%9F%BA%E7%A1%80%E6%98%AF%E4%BB%80%E4%B9%88%2F</url>
+    <content type="text"><![CDATA[这段时间一直对学习能力很感兴趣通过在知乎以及互联网上的耕耘，我始终认为强大的学习能力，在于明确知道自己需要解决问题的路径愿意付出努力高效利用时间我始终觉得学习能力非常重要的一方面就是对于问题解决路径的理解，也就是对方法论的理解。怎么才能考上北大？一个高效的思维模式应该是这样的：考试→自己能否参加考试？→考试需要我提交哪些材料？→官网会有说明→准备提交材料→考试的内容是什么？→官网会有说明→查询以前的考试内容→准备考试需要的内容→参加考试然而很多人这个完整的模式都思考不了需要去询问，当然也许他只是懒，这就是第二点，连打开官网去查一查信息都不愿意去做的人，我很难觉得他会有足够的毅力和努力准备考试。（PS：别说可能看不懂官网，北大官网有中文）也许有的人他知道这个完整的流程，但是他就是想听听前辈的经验但是经验这个东西是非常主观的，也许他听了一大堆经验之后发现对自己毫无帮助，他的时间就完全浪费了。所以在寻求他人帮助时应该首先明确自己需要什么帮助，精准高效的利用自己和他人的时间。能够独立的，努力地自己去研究问题再解决问题的人，通常运气不会太差。 作者：长岭遇雨链接：https://www.zhihu.com/question/35103080/answer/61350825来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[端口被占用问题]]></title>
+    <url>%2F2017%2F03%2F10%2F%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[用mac学习J2EE的时候调试项目经常会出现端口被占用问题，为了方便查找，专门做了这篇简单的BLOG方便查找。 首先运行Terminal查看端口被哪个程序占用sudo lsof -i tcp:port 如： sudo lsof -i tcp:8080 找到进程的PID，将占用进程杀死sudo kill -9 PID 如：sudo kill -9 23453]]></content>
+      <categories>
+        <category>mac</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[印度种姓的种种]]></title>
+    <url>%2F2017%2F02%2F23%2F%E5%8D%B0%E5%BA%A6%E7%A7%8D%E5%A7%93%E7%9A%84%E7%A7%8D%E7%A7%8D%2F</url>
+    <content type="text"><![CDATA[印度种姓制度的起源突然想了解一下印度的种姓制度，于是在网络上寻找资料（Google、百度、知乎等）。 一般认为，种姓制度是公元前600年左右，随雅利安人入侵印度而创立的社会制度。原本的种姓制度并非要划分阶级及人的高低贵贱，而是要确保本身雅利安人的执政权和保持各种工作都有一定的人数。 印度种姓制度源于印度教，又称瓦尔纳制度，是在后期吠陀时代形成的，具有3000多年历史。这一制度将人分为4个等级，即婆罗门、刹帝利、吠舍和首陀罗。 它是古代世界最典型、最森严的等级制度。 四个等级在地位、权利、职业、义务等方面有严格的规定： 第一等级婆罗门主要是僧侣贵族，拥有解释宗教经典和祭神的特权； 第二等级刹帝利是军事贵族和行政贵族，他们拥有征收各种赋税的特权； 第三等级吠舍是雅利安人自由平民阶层，他们从事农、牧、渔、猎等，政治上没有特权，必须以布施和纳税的形式来供养前两个等级； 第四等级首陀罗绝大多数是被征服的土著居民，属于非雅利安人，他们从事农、牧、渔、猎等业以及当时被认为低贱的职业。 同时，各种姓派生出许多副种姓(或称亚种姓、次种姓)，进而衍生出更多分支。除四大种姓外，还有一种被排除在种姓外的人，即所谓“不可接受的贱民”，又称“达利特”。他们社会地位最低，最受歧视。种姓世袭，不易更改。社会地位高低、经济状况好坏，大多与种姓有关。尽管印度独立以来，已废除种姓制度，但几千年来种姓制度造成的印度不少地区、尤其是农村仍相当严重。 印度独立后，宪法第15条规定：“任何人不得因种姓、宗教、出生地而受歧视”；第17条明文规定废除“不可接触制”。为了保证低种姓人和贱民的教育和求职权力，印度还实施了著名的“保留政策”，不仅在议会两院为他们保留了一定比例的席位，而且在所有政府机构和国营企业中为他们保留高达27%的名额。另外，还给低种姓出生的学生一定比例的升学名额。在今天，印度人的身份记录里不再有任何关于种姓的记载。 尽管自印度独立以后，废除了种姓制度，印度宪法明文规定不准阶级歧视，但是种姓制度对今天的印度社会特别是印度农村仍然保留着巨大的影响。种姓层级最高的婆罗门不及人口的4%，却占有七成的司法权及接近半数的国会席次。就算在天灾时，贱民亦饱受歧视，得不到最基本的援助。如在2008年8月，印度比哈尔邦的阿拉里亚发生水灾，然而由于阿拉里亚为贱民的集中地，灾民得不到地方政府的任何协助，令大量灾民死于水灾当中。 在知乎上找了一些常见姓氏相对应的职业Palaha：常见的锡克姓氏，当然不如Singh那么常见。关于锡克人的种姓应该如何划分是一个很复杂的事情，可自行查阅论文。 马瓦尔人作为一个族群本身就是很重的商人种姓属性，很早以前他们就在全印四处经商，从事贸易。这里就是一个不能做四分法的情况，因为他们当中有包括“Singh”、“Trivedi”这样的名字的人也在从事贸易。 在商人种姓内部又有各类具体的划分的。比如说，你这位从事“财务”相关工作的Maloo，我更倾向于把他当成高种姓。 Rathee：这个词“रथी”本身的意思就是“车夫”，但这个车通常是战场上的战车，所以这应该是刹帝利种姓。 Bagaria：“Bagar”这个词本来的意思是“水边高地”，所以“Bagari”最初只是指的一个住在水边高地上的族群。然后按照你给的参考文字，他们是一群在古吉拉特的“Banias”（商贸业种姓）。所以合起来推测，住在某处水边高地上以贸易为生的人。这就是种姓最正确的理解啊，通过名字来判断他的家世渊源和职业，不是所有的种姓都能判断出所谓的高低贵贱，那只是最为笼统的分类罢了。要知道，富裕的商人阶级（所谓第三等级的吠舍），绝不比很多所谓的刹帝利种姓地位低。 Yadav：雅度族！这是高贵的大姓，传承自史诗时代！但是，由于这个姓太大了，后世子孙分化特别严重，比如在北方邦（UP），有叫雅度的低种姓者。]]></content>
+      <categories>
+        <category>印度</category>
+      </categories>
+      <tags>
+        <tag>印度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[macOS10.12.3安装WIN10]]></title>
+    <url>%2F2017%2F02%2F20%2FMac%E5%AE%89%E8%A3%85WIN10%2F</url>
+    <content type="text"><![CDATA[相信很多Mac用户都会因为或多或少的原因需要安装Windows系统，但是网络上能找到的相关文章太过陈旧，只好自己摸索。这篇文章就讲解了macOS10.12.3系统安装WIN10双系统的过程以及可能碰到的问题。 第一步下载适当win10镜像，镜像在Google或者Baidu上很容易找到，下载下来即可。 第二步在下载镜像的过程中，检查安装所需，确保之后的步骤可以顺利进行。 附：Apple官网的Boot Camp助理帮助附：Apple官方文档 上面两个网页可以解决大部分的问题，但事实不是如此，我每次尝试新事物时都会被或多或少的困难折磨—-macOS sierra系统更新后多出来了许多不知道的功能，直接导致我碰上这次双系统之旅的第一只拦路虎。我的当前系统是macOS10.12.3，苹果在优化存储空间上下了很大功夫，多出来了一个“优化存储空间”的功能，导致了我的mac的存储空间中有40多G的可清除部分，以致于没有足够的空间用来安装Win10，最终通过Google解决。 解决方法如下：设置–iCloud–iCloud Drive（选项）–去掉优化Mac存储空间–重新启动（如果不行多试几次） 第三步镜像下载完成，环境所需没有问题，便可以开始第三步了。打开Boot Camp助理（Launchpad–其他–Boot Camp助理）点击继续–选择镜像–分配空间大小–继续–系统会自动下载所需文件（保持网速稳定）这时我又碰到了一个问题–您的磁盘未能分区解决方法：（当时没办法截图）重启电脑–开机时按住command+R–进入磁盘管理–如果发现Macintosh HD是灰色的话，选中后点装载后选择急救。修复后重新启动问题便解决了。 第四步之后就是简单熟悉的Windows系统安装了，一步一步来，序列号可以先跳过。进入WIN10系统–打开我的电脑进入除了系统盘的另一个盘–打开BootCamp文件夹–运行setup–结束重启–完成驱动安装。 注意安装软件以及破解系统时不要被病毒劫持主页了，很恶心很麻烦。]]></content>
+      <categories>
+        <category>macOS</category>
+      </categories>
+      <tags>
+        <tag>双系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Mac Sublime Text3的汉化]]></title>
+    <url>%2F2017%2F02%2F19%2FMac%E4%B8%ADSublime-Text3%E6%B1%89%E5%8C%96%2F</url>
+    <content type="text"><![CDATA[1.下载汉化文件Default.sublime-package 2.打开 Sublime Text3选择Sublime Text–Preferences–Browse Packages点开后会自动打开Finder 如下图 3.找到Installed Packages点击图中上方的Installed Packages 如下图 4.复制文件到Installed Packages中将下载的Default.sublime-package放在Installed Packages文件夹中 3.完成汉化]]></content>
+      <categories>
+        <category>macOS</category>
+      </categories>
+      <tags>
+        <tag>Sublime Text</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Alfred中Workflow的简单案例--新建文件]]></title>
+    <url>%2F2017%2F02%2F15%2FAlfred%E4%B8%ADWorkflow%E7%9A%84%E7%AE%80%E5%8D%95%E6%A1%88%E4%BE%8B--%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[从头构建一个“新建文件”功能的workflow文件自从使用了macbook之后，我便在网络上大量搜索能够有效提高效率的软件，大部分人的推荐都会有一个叫做Alfred的应用,这篇文章讲解了一个简单的alfredworkflow是如何写出来的。 什么是Alfred?Alfred is an award-winning app for Mac OS X which boosts your efficiency with hotkeys, keywords, text expansion and more. Search your Mac and the web, and be more productive with custom actions to control your Mac. 点击进入Alfred官网Workflow汇总 直切主题，有自己写workflow想法的你肯定已经知道什么是Alfred、怎么使用Alfred，但实际上自己写一个workflow真的很简单。下面我会一步一步的整理出我是如何写出这一简单的功能的。 1.设置Workflow Defaults1.1打开Alfred打开Alfred的Workflow，点击左下角的加号。 1.2填写基本信息 2.创建Blank Workflow2.1新建Blank Workflow 2.2填写信息分别为workflow名称、功能描述、功能分类，图中右上角的方框是workflow的Icon，支持拖拽找到图片直接拖进去即可。 2.3得到workflow界面 3.制作Workflow3.1 新建Inputs在界面上右键得到如下图结果，选择Inputs中的Keyword 3.1.1 填写自定义信息得到如下图结果，填写你想要设置的 激活词组 、标题以及简介，我这里定义成new。 3.1.2实际使用演示 3.2 新建Actions在界面上右键得到如下图结果，选择Actions中的Run NSAppleScript 3.2.1 编辑代码双击得到如下图结果，接着双击转到代码编辑页面将your script here更换成你想要实现的功能的代码即可,当然此处只能用Apple的script来写。 此处我的代码是 on alfred_script(q) tell application &quot;Finder&quot; set selection to make new file at (get insertion location) end tell end alfred_script 如果想用其他语言在请选择在3.2时选择Run Script即可，可以自己选择所用语言，如下图 3.2.2连接模块 4.结果 5.附导出文件new-file.alfredworkflow]]></content>
+      <categories>
+        <category>macOS</category>
+      </categories>
+      <tags>
+        <tag>Alfred</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown语法简介]]></title>
+    <url>%2F2017%2F02%2F15%2FMarkdown%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B%2F</url>
+    <content type="text"><![CDATA[主要内容以下内容来源于younghz的Github Markdown是_什么_？_谁_发明了这么个东西？为什么要使用它？_怎么_使用？都_谁_在用？感觉有意思？不怕你看见，就怕你试试 正文1. Markdown是什么？Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。Markdown也可以理解为将以MARKDOWN语言编写的语言转换成HTML内容的工具，最初是一个perl脚本Markdown.pl。 2. _谁_发明了这么个东西？它由Aaron Swartz和John Gruber共同设计，Aaron Swartz就是那位于去年（2013年1月11日）自杀,有着开挂一般人生经历的程序员。维基百科对他的介绍是：软件工程师、作家、政治组织者、互联网活动家、维基百科人。 他有着足以让你跪拜的人生经历： 14岁参与RSS 1.0规格标准的制订。 2004年入读斯坦福，之后退学。 2005年创建Infogami，之后与Reddit合并成为其合伙人。 2010年创立求进会（Demand Progress），积极参与禁止网络盗版法案（SOPA）活动，最终该提案居然被撤回。 2011年7月19日，因被控从MIT和JSTOR下载480万篇学术论文并以免费形式上传于网络被捕。 2013年1月自杀身亡。 天才都有早逝的归途（又是一位犹太人）。 3. 为什么要使用它？ 它是易读（看起开舒服）、易写（语法简单）、易更改纯文本。处处体现着极简主义的影子。 兼容HTML，可以转换为HTML格式发布。 跨平台使用。 越来越多的网站支持Markdown。 更方便清晰的组织你的电子邮件。（Markdown-here, Airmail） 摆脱Word（我不是认真的）。 4. _怎么_使用？如果不算扩展，Markdown的语法绝对简单到让你爱不释手。 废话太多，下面正文，Markdown语法主要分为如下几大部分：标题，段落，区块引用，代码区块，强调，列表，分割线，链接，图片，反斜杠 \，符号’`’。 4.1 标题两种形式：1）使用=和-标记一级和二级标题。 一级标题=========二级标题--------- 效果： 一级标题 二级标题 2）使用#，可表示1-6级标题。 # 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题 效果： 一级标题二级标题三级标题四级标题五级标题六级标题 4.2 段落段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用两个以上空格加上回车（引用中换行省略回车）。 4.3 区块引用在段落的每行或者只在第一行使用符号&gt;,还可使用多个嵌套引用，如： > 区块引用>&gt; 嵌套引用 效果： 区块引用 嵌套引用 4.4 代码区块代码区块的建立是在每行加上4个空格或者一个制表符（如同写代码一样）。如普通段落： void main(){ printf(“Hello, Markdown.”);} 代码区块： void main() { printf(&quot;Hello, Markdown.&quot;); } 注意:需要和普通段落之间存在空行。 4.5 强调在强调内容两侧分别加上*或者_，如： *斜体*，_斜体_**粗体**，__粗体__ 效果： 斜体，_斜体_粗体，粗体 4.6 列表使用·、+、或-标记无序列表，如： -（+*） 第一项-（+*） 第二项- （+*）第三项 注意：标记后面最少有一个_空格_或制表符。若不在引用区块中，必须和前方段落之间存在空行。 效果： 第一项 第二项 第三项 有序列表的标记方式是将上述的符号换成数字,并辅以.，如： 1 . 第一项2 . 第二项3 . 第三项 效果： 第一项 第二项 第三项 4.7 分割线分割线最常使用就是三个或以上*，还可以使用-和_。 4.8 链接链接可以由两种形式生成：行内式和参考式。行内式： [younghz的Markdown库](https:://github.com/younghz/Markdown “Markdown”)。 效果： younghz的Markdown库。 参考式： [younghz的Markdown库1][1][younghz的Markdown库2][2][1]:https:://github.com/younghz/Markdown “Markdown”[2]:https:://github.com/younghz/Markdown “Markdown” 效果： younghz的Markdown库1younghz的Markdown库2 注意：上述的[1]:https:://github.com/younghz/Markdown &quot;Markdown&quot;不出现在区块中。 4.9 图片添加图片的形式和链接相似，只需在链接的基础上前方加一个！。 4.10 反斜杠\相当于反转义作用。使符号成为普通符号。 4.11 符号’`’起到标记作用。如： `ctrl+a` 效果： ctrl+a 5. 都_谁_在用？Markdown的使用者： GitHub 简书 Stack Overflow Apollo Moodle Reddit 等等 6. 感觉有意思？趁热打铁，推荐几个_工具_。 Chrome下的stackedit插件可以离线使用，很爽。也不用担心平台受限。在线的dillinger.io算是评价好的了，可是不能离线使用。 Windowns下的MarkdownPad也用过，不过免费版的体验不是很好。 Mac下的Mou是国人贡献的，口碑很好。推荐。 Linux下的ReText不错。 其实在对语法了如于心的话，直接用编辑器就可以了，脑子里满满的都是格式化好的文本啊。我现在使用马克飞象 + Markdown-here，先编辑好，然后一键格式化，挺方便。 注意：不同的Markdown解释器或工具对相应语法（扩展语法）的解释效果不尽相同，具体可参见工具的使用说明。虽然有人想出面搞一个所谓的标准化的Markdown，[没想到还惹怒了健在的创始人John Gruber](http://blog.codinghorror.com/standard-markdown-is-now-common-markdown/)。 以上基本是所有traditonal markdown的语法。 补充：随着macOS 10.12的更新，Mou已经无法在新系统上使用，推荐的Markdown编辑器有MWeb、Ulysses、Byword等。]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[搭建博客]]></title>
+    <url>%2F2017%2F02%2F11%2F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以下链接不是详细的教你如何一步一步实现完整页面的，只是提供了我在完成整套页面的过程中遇到的问题的最优答案。很多棘手的问题在这些链接前迎刃而解。 &nbsp;&nbsp;1. HEXO官方网站 &nbsp;&nbsp;2. Next主题Github &nbsp;&nbsp;3. Next主题使用文档 &nbsp;&nbsp;4. 在配置Next过程中遇到归档、分类时官网教程不完善]]></content>
+      <categories>
+        <category>日常所作</category>
+      </categories>
+      <tags>
+        <tag>搭建博客</tag>
+      </tags>
+  </entry>
 </search>
