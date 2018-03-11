@@ -123,17 +123,17 @@
 
 
 
-<meta name="description" content="test {% aplayer &quot;Seeyouagain&quot; &quot;me&quot; &quot;https://wongzhen/See%20You%20Again.mp3&quot;  %}">
+<meta name="description" content="test 		 			var ap = new APlayer({ 				element: document.getElementById(&quot;aplayer1&quot;), 				narrow: false, 				autoplay: false, 				showlrc: 0, 				music: { 					title: &quot;Seeyouagain&quot;, 					author: &quot;me&quot;,">
 <meta property="og:type" content="website">
 <meta property="og:title" content="music">
 <meta property="og:url" content="http://wongzhen.com/music/index.html">
 <meta property="og:site_name" content="Dante">
-<meta property="og:description" content="test {% aplayer &quot;Seeyouagain&quot; &quot;me&quot; &quot;https://wongzhen/See%20You%20Again.mp3&quot;  %}">
+<meta property="og:description" content="test 		 			var ap = new APlayer({ 				element: document.getElementById(&quot;aplayer1&quot;), 				narrow: false, 				autoplay: false, 				showlrc: 0, 				music: { 					title: &quot;Seeyouagain&quot;, 					author: &quot;me&quot;,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-11T14:33:09.632Z">
+<meta property="og:updated_time" content="2018-03-11T14:33:55.344Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="music">
-<meta name="twitter:description" content="test {% aplayer &quot;Seeyouagain&quot; &quot;me&quot; &quot;https://wongzhen/See%20You%20Again.mp3&quot;  %}">
+<meta name="twitter:description" content="test 		 			var ap = new APlayer({ 				element: document.getElementById(&quot;aplayer1&quot;), 				narrow: false, 				autoplay: false, 				showlrc: 0, 				music: { 					title: &quot;Seeyouagain&quot;, 					author: &quot;me&quot;,">
 
 
 
@@ -372,9 +372,24 @@
       <div class="post-body">
         
         
-          <script src="/assets/js/APlayer.min.js"> </script><p>test</p>
-<pre><code>{% aplayer "Seeyouagain" "me" "https://wongzhen/See%20You%20Again.mp3"  %}
-</code></pre>
+          <script src="/assets/js/APlayer.min.js"> </script><p>test<br><div id="aplayer1" class="aplayer" style="margin-bottom: 20px;"></div>
+		<script>
+			var ap = new APlayer({
+				element: document.getElementById("aplayer1"),
+				narrow: false,
+				autoplay: false,
+				showlrc: 0,
+				music: {
+					title: "Seeyouagain",
+					author: "me",
+					url: "https://wongzhen/See%20You%20Again.mp3",
+					pic: "",
+				}
+			});
+			window.aplayers || (window.aplayers = []);
+			window.aplayers.push(ap);
+		</script></p>
+
         
       </div>
       
