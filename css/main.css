@@ -1269,7 +1269,7 @@ pre .javascript .function {
   opacity: 0;
 }
 .posts-expand {
-  padding-top: 40px;
+  padding-top: 0px;
 }
 @media (max-width: 767px) {
   .posts-expand {
@@ -1497,7 +1497,7 @@ pre .javascript .function {
   font-size: 16px;
 }
 .posts-expand .post-meta {
-  margin: 3px 0 60px 0;
+  margin: 3px 0 30px 0;
   color: #999;
   font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
@@ -1547,7 +1547,7 @@ pre .javascript .function {
   }
 }
 .post-button {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .posts-expand .post-tags {
   margin-top: 40px;
@@ -1610,8 +1610,8 @@ pre .javascript .function {
 }
 .posts-expand .post-eof {
   display: block;
-  margin: 80px auto 60px;
-  width: 8%;
+  margin: 30px auto 10px;
+  width: 25%;
   height: 1px;
   background: #ccc;
   text-align: center;
@@ -1977,7 +1977,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0fb52d;
+  background: #fb2dff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2855,6 +2855,13 @@ embed {
 .header {
   background: transparent;
 }
+.header-inner {
+  padding-top: 80px;
+  padding-bottom: 0px;
+}
+.posts-expand {
+  padding-top: 0px;
+}
 #heart {
   animation: heartAnimate 1.33s ease-in-out infinite;
 }
@@ -2862,8 +2869,8 @@ embed {
   color: #ff71a8;
 }
 .post {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
