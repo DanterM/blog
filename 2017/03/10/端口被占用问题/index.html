@@ -10,9 +10,17 @@
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
 <meta name="theme-color" content="#222">
 
 
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -123,21 +131,18 @@
 
 
 
-<meta name="description" content="用mac学习J2EE的时候调试项目经常会出现端口被占用问题，为了方便查找，专门做了这篇简单的BLOG方便查找。 首先运行Terminal查看端口被哪个程序占用sudo lsof -i tcp:port 如： sudo lsof -i tcp:8080  找到进程的PID，将占用进程杀死sudo kill -9 PID 如：sudo kill -9 23453">
+<meta name="description" content="用mac学习J2EE的时候调试项目经常会出现端口被占用问题，为了方便查找，专门做了这篇简单的BLOG方便查找。 首先运行Terminal查看端口被哪个程序占用sudo lsof -i tcp:port 如： sudo lsof -i tcp:8080 找到进程的PID，将占用进程杀死sudo kill -9 PID 如：sudo kill -9 23453">
 <meta name="keywords" content="mac">
 <meta property="og:type" content="article">
 <meta property="og:title" content="端口被占用问题">
 <meta property="og:url" content="http://wongzhen.com/2017/03/10/端口被占用问题/index.html">
 <meta property="og:site_name" content="Dante">
-<meta property="og:description" content="用mac学习J2EE的时候调试项目经常会出现端口被占用问题，为了方便查找，专门做了这篇简单的BLOG方便查找。 首先运行Terminal查看端口被哪个程序占用sudo lsof -i tcp:port 如： sudo lsof -i tcp:8080  找到进程的PID，将占用进程杀死sudo kill -9 PID 如：sudo kill -9 23453">
+<meta property="og:description" content="用mac学习J2EE的时候调试项目经常会出现端口被占用问题，为了方便查找，专门做了这篇简单的BLOG方便查找。 首先运行Terminal查看端口被哪个程序占用sudo lsof -i tcp:port 如： sudo lsof -i tcp:8080 找到进程的PID，将占用进程杀死sudo kill -9 PID 如：sudo kill -9 23453">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://p1.bqimg.com/567571/eac01fbac791397c.png">
-<meta property="og:image" content="http://p1.bqimg.com/567571/eac01fbac791397c.png">
-<meta property="og:updated_time" content="2017-03-22T02:19:19.000Z">
+<meta property="og:updated_time" content="2018-03-27T05:21:00.230Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="端口被占用问题">
-<meta name="twitter:description" content="用mac学习J2EE的时候调试项目经常会出现端口被占用问题，为了方便查找，专门做了这篇简单的BLOG方便查找。 首先运行Terminal查看端口被哪个程序占用sudo lsof -i tcp:port 如： sudo lsof -i tcp:8080  找到进程的PID，将占用进程杀死sudo kill -9 PID 如：sudo kill -9 23453">
-<meta name="twitter:image" content="http://p1.bqimg.com/567571/eac01fbac791397c.png">
+<meta name="twitter:description" content="用mac学习J2EE的时候调试项目经常会出现端口被占用问题，为了方便查找，专门做了这篇简单的BLOG方便查找。 首先运行Terminal查看端口被哪个程序占用sudo lsof -i tcp:port 如： sudo lsof -i tcp:8080 找到进程的PID，将占用进程杀死sudo kill -9 PID 如：sudo kill -9 23453">
 
 
 
@@ -505,11 +510,9 @@
         <script src="/assets/js/APlayer.min.js"> </script><p>用mac学习J2EE的时候调试项目经常会出现端口被占用问题，为了方便查找，专门做了这篇简单的BLOG方便查找。</p>
 <h4 id="首先运行Terminal查看端口被哪个程序占用"><a href="#首先运行Terminal查看端口被哪个程序占用" class="headerlink" title="首先运行Terminal查看端口被哪个程序占用"></a>首先运行Terminal查看端口被哪个程序占用</h4><pre><code>sudo lsof -i tcp:port
 如： sudo lsof -i tcp:8080
-</code></pre><p><img src="http://p1.bqimg.com/567571/eac01fbac791397c.png" alt=""></p>
-<h4 id="找到进程的PID，将占用进程杀死"><a href="#找到进程的PID，将占用进程杀死" class="headerlink" title="找到进程的PID，将占用进程杀死"></a>找到进程的PID，将占用进程杀死</h4><pre><code>sudo kill -9 PID
+</code></pre><h4 id="找到进程的PID，将占用进程杀死"><a href="#找到进程的PID，将占用进程杀死" class="headerlink" title="找到进程的PID，将占用进程杀死"></a>找到进程的PID，将占用进程杀死</h4><pre><code>sudo kill -9 PID
 如：sudo kill -9 23453
-</code></pre><p><img src="http://p1.bqimg.com/567571/eac01fbac791397c.png" alt=""></p>
-
+</code></pre>
       
     </div>
     
@@ -597,8 +600,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/23/印度种姓的种种/" rel="next" title="印度种姓的种种">
-                <i class="fa fa-chevron-left"></i> 印度种姓的种种
+              <a href="/2017/02/20/Mac安装WIN10/" rel="next" title="macOS10.12.3安装WIN10">
+                <i class="fa fa-chevron-left"></i> macOS10.12.3安装WIN10
               </a>
             
           </div>
@@ -607,8 +610,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/14/极高学习能力的基础是什么/" rel="prev" title="极高学习能力的基础是什么">
-                极高学习能力的基础是什么 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/11/27/Mac中常用的操作/" rel="prev" title="Mac中常用的操作">
+                Mac中常用的操作 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -695,7 +698,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -706,7 +709,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -717,7 +720,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -768,6 +771,14 @@
                 推荐阅读
               </div>
               <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.zfrontier.com/" title="装备前线" target="_blank">装备前线</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.cilimao.me/" title="磁力猫" target="_blank">磁力猫</a>
+                  </li>
                 
                   <li class="links-of-blogroll-item">
                     <a href="http://www.uisdc.com/" title="优设" target="_blank">优设</a>
@@ -885,7 +896,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共7.5k字</span>
+  <span class="post-count">博客全站共8.1k字</span>
 </div>
 
         
