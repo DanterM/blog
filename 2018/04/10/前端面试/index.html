@@ -171,7 +171,7 @@
 <meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/%E4%B8%80%E9%9D%A232.png">
 <meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/%E4%B8%80%E9%9D%A233.png">
 <meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/%E4%B8%80%E9%9D%A234.png">
-<meta property="og:updated_time" content="2018-04-14T15:28:52.609Z">
+<meta property="og:updated_time" content="2018-04-14T16:19:44.799Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试技巧总结（IMOOC）">
 <meta name="twitter:description" content="该博客总结慕课网-快乐动起来呀老师的前端面试技巧，还请读者跳转到课程主页购买观看。 关于面试 技术面试（技术方面） 负责人面试（技术、项目深度、项目架构、业务） HR面试（性格、沟通、潜力）  大概1-1.5小时 五大部分1、面试准备2、面试技巧3、题目演练4、知识梳理5、复习指导课程价值：  JD描述怎看 奖励怎么写 知识怎么复习 问题该怎么回答 项目怎么准备 和负责人怎么沟通 HR印象怎么留">
@@ -900,7 +900,9 @@ gulp（推荐） Sass less (两种预编译语言)npm  grunt browserify webpack
 <li>布局Layout</li>
 </ul>
 <hr>
-<h5 id="运行机制类"><a href="#运行机制类" class="headerlink" title="运行机制类"></a>运行机制类</h5><p><a href="http://www.ruanyifeng.com/blog/2014/10/event-loop.html" target="_blank" rel="noopener">JavaScript 运行机制详解</a></p>
+<h5 id="运行机制类"><a href="#运行机制类" class="headerlink" title="运行机制类"></a>运行机制类</h5><ul>
+<li><a href="http://www.ruanyifeng.com/blog/2014/10/event-loop.html" target="_blank" rel="noopener">JavaScript 运行机制详解</a></li>
+</ul>
 <p><strong>如何理解JS的单线程</strong></p>
 <p>JS是单线程的，同一时间只能做一件事。</p>
 <p>异步任务（队列）要挂起，先做同步任务，处理过后才相应异步任务。</p>
@@ -908,8 +910,10 @@ gulp（推荐） Sass less (两种预编译语言)npm  grunt browserify webpack
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">例二、</span><br><span class="line">    console.log(&apos;A&apos;);</span><br><span class="line">    while(true)&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    console.log(&apos;B&apos;);</span><br><span class="line">    </span><br><span class="line">    结果：A。</span><br><span class="line">    因为while是同步任务，一直在执行.</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">例三、</span><br><span class="line">    for(var i=0;i&lt;4;i++)&#123;</span><br><span class="line">        setTimeout(function()&#123;</span><br><span class="line">        console.log(i);</span><br><span class="line">        &#125;,1000);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    结果：4、4、4、4.</span><br><span class="line">    因为for循环是同步任务，</span><br><span class="line">    所以执行for循环的时候setTimeout()函数是存在定时器中的，</span><br><span class="line">    并没有执行，一直到for循环执行结束后setTimeout()函数才开始执行</span><br><span class="line">    ---异步任务的放入队列的时间和执行时间</span><br></pre></td></tr></table></figure>
 <p><strong>什么是任务队列</strong></p>
-<p> <a href="https://segmentfault.com/a/1190000011198232" target="_blank" rel="noopener">JavaScript 异步、栈、事件循环、任务队列</a></p>
-<p><a href="https://segmentfault.com/a/1190000004322358" target="_blank" rel="noopener">JavaScript：彻底理解同步、异步和事件循环(Event Loop)</a></p>
+<ul>
+<li><a href="https://segmentfault.com/a/1190000011198232" target="_blank" rel="noopener">JavaScript 异步、栈、事件循环、任务队列</a> </li>
+<li><a href="https://segmentfault.com/a/1190000004322358" target="_blank" rel="noopener">JavaScript：彻底理解同步、异步和事件循环(Event Loop)</a></li>
+</ul>
 <p><strong>什么是Event Loop</strong></p>
 <ul>
 <li><a href="https://zhuanlan.zhihu.com/p/33087629" target="_blank" rel="noopener">Event Loop的规范和实现</a></li>
@@ -1015,7 +1019,7 @@ gulp（推荐） Sass less (两种预编译语言)npm  grunt browserify webpack
   <p><span>本文标题:</span><a href="/2018/04/10/前端面试/">前端面试技巧总结（IMOOC）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Wong Zhen 的个人博客">Wong Zhen</a></p>
   <p><span>发布时间:</span>2018年04月10日 - 17:04</p>
-  <p><span>最后更新:</span>2018年04月14日 - 23:04</p>
+  <p><span>最后更新:</span>2018年04月15日 - 00:04</p>
   <p><span>原始链接:</span><a href="/2018/04/10/前端面试/" title="前端面试技巧总结（IMOOC）">http://wongzhen.com/2018/04/10/前端面试/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://wongzhen.com/2018/04/10/前端面试/"  aria-label="复制成功！"></i></span>
   </p>
