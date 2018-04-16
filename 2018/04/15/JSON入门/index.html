@@ -139,10 +139,12 @@
 <meta property="og:site_name" content="Dante">
 <meta property="og:description" content="JSON：JavaScript 对象表示法（JavaScript Object Notation）。 JSON 是存储和交换文本信息的语法。类似 XML。 JSON 比 XML 更小、更快，更易解析。   12345678&amp;#123;&amp;quot;employees&amp;quot;: [&amp;#123; &amp;quot;firstName&amp;quot;:&amp;quot;Bill&amp;quot; , &amp;quot;last">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-15T14:11:39.277Z">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/HTML5-7.jpg">
+<meta property="og:updated_time" content="2018-04-16T08:47:32.045Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JSON入门">
 <meta name="twitter:description" content="JSON：JavaScript 对象表示法（JavaScript Object Notation）。 JSON 是存储和交换文本信息的语法。类似 XML。 JSON 比 XML 更小、更快，更易解析。   12345678&amp;#123;&amp;quot;employees&amp;quot;: [&amp;#123; &amp;quot;firstName&amp;quot;:&amp;quot;Bill&amp;quot; , &amp;quot;last">
+<meta name="twitter:image" content="http://olfa3o6q1.bkt.clouddn.com/HTML5-7.jpg">
 
 
 
@@ -470,7 +472,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  236
+                  1,239
                 </span>
               
 
@@ -486,7 +488,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  5
                 </span>
               
             </div>
@@ -522,6 +524,104 @@
 <hr>
 <h4 id="JSON-转换为-JavaScript-对象"><a href="#JSON-转换为-JavaScript-对象" class="headerlink" title="JSON - 转换为 JavaScript 对象"></a>JSON - 转换为 JavaScript 对象</h4><p>JSON 文本格式在语法上与创建 JavaScript 对象的代码相同。</p>
 <p>由于这种相似性，无需解析器，JavaScript 程序能够使用内建的 eval( ) 函数，用 JSON 数据来生成原生的 JavaScript 对象。</p>
+<p><strong>类似 XML</strong></p>
+<ul>
+<li>JSON 是纯文本</li>
+<li>JSON 具有“自我描述性”（人类可读）</li>
+<li>JSON 具有层级结构（值中存在值）</li>
+<li>JSON 可通过 JavaScript 进行解析</li>
+<li>JSON 数据可使用 AJAX 进行传输</li>
+</ul>
+<p><strong>相比 XML 的不同之处</strong></p>
+<ul>
+<li>没有结束标签</li>
+<li>更短</li>
+<li>读写的速度更快</li>
+<li>能够使用内建的 JavaScript eval() 方法进行解析</li>
+<li>使用数组</li>
+<li>不使用保留字</li>
+</ul>
+<p><strong>为什么使用 JSON？</strong><br>对于 AJAX 应用程序来说，JSON 比 XML 更快更易使用：</p>
+<ul>
+<li>使用 XML<ul>
+<li>读取 XML 文档</li>
+<li>使用 XML DOM 来循环遍历文档</li>
+<li>读取值并存储在变量中</li>
+</ul>
+</li>
+<li>使用 JSON<ul>
+<li>读取 JSON 字符串</li>
+<li>用 eval() 处理 JSON 字符串</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>JSON 语法是 JavaScript 语法的子集。</strong></p>
+<p><strong>JSON 语法规则</strong></p>
+<p>JSON 语法是 JavaScript 对象表示法语法的子集。</p>
+<ul>
+<li>数据在名称/值对中</li>
+<li>数据由逗号分隔</li>
+<li>花括号保存对象</li>
+<li>方括号保存数组</li>
+</ul>
+<p><strong>JSON 名称/值对</strong></p>
+<p>JSON 数据的书写格式是：名称/值对。</p>
+<p>名称/值对包括字段名称（在双引号中），后面写一个冒号，然后是值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;firstName&quot; : &quot;John&quot;</span><br></pre></td></tr></table></figure>
+<p>这很容易理解，等价于这条 JavaScript 语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firstName = &quot;John&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>JSON 值</strong><br>JSON 值可以是：</p>
+<ul>
+<li>数字（整数或浮点数）</li>
+<li>字符串（在双引号中）</li>
+<li>逻辑值（true 或 false）</li>
+<li>数组（在方括号中）</li>
+<li>对象（在花括号中）</li>
+<li>null</li>
+</ul>
+<p><strong>JSON 对象</strong></p>
+<p>JSON 对象在花括号中书写：</p>
+<p>对象可以包含多个名称/值对：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; &quot;firstName&quot;:&quot;John&quot; , &quot;lastName&quot;:&quot;Doe&quot; &#125;</span><br></pre></td></tr></table></figure>
+<p>这一点也容易理解，与这条 JavaScript 语句等价：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">firstName = &quot;John&quot;</span><br><span class="line">lastName = &quot;Doe&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>JSON 数组</strong></p>
+<p>JSON 数组在方括号中书写：</p>
+<p>数组可包含多个对象：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;employees&quot;: [</span><br><span class="line">&#123; &quot;firstName&quot;:&quot;John&quot; , &quot;lastName&quot;:&quot;Doe&quot; &#125;,</span><br><span class="line">&#123; &quot;firstName&quot;:&quot;Anna&quot; , &quot;lastName&quot;:&quot;Smith&quot; &#125;,</span><br><span class="line">&#123; &quot;firstName&quot;:&quot;Peter&quot; , &quot;lastName&quot;:&quot;Jones&quot; &#125;</span><br><span class="line">]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在上面的例子中，对象 “employees” 是包含三个对象的数组。每个对象代表一条关于某人（有姓和名）的记录。</p>
+<p><strong>JSON 使用 JavaScript 语法</strong></p>
+<p>因为 JSON 使用 JavaScript 语法，所以无需额外的软件就能处理 JavaScript 中的 JSON。</p>
+<p>通过 JavaScript，您可以创建一个对象数组，并像这样进行赋值：</p>
+<p><strong>例子</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var employees = [</span><br><span class="line">&#123; &quot;firstName&quot;:&quot;Bill&quot; , &quot;lastName&quot;:&quot;Gates&quot; &#125;,</span><br><span class="line">&#123; &quot;firstName&quot;:&quot;George&quot; , &quot;lastName&quot;:&quot;Bush&quot; &#125;,</span><br><span class="line">&#123; &quot;firstName&quot;:&quot;Thomas&quot; , &quot;lastName&quot;: &quot;Carter&quot; &#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+<p>可以像这样访问 JavaScript 对象数组中的第一项：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">employees[0].lastName;</span><br></pre></td></tr></table></figure>
+<p>返回的内容是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Gates</span><br></pre></td></tr></table></figure>
+<p>可以像这样修改数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">employees[0].lastName = &quot;Jobs&quot;;</span><br></pre></td></tr></table></figure>
+<p><strong>JSON 文件</strong><br>JSON 文件的文件类型是 “.json”<br>JSON 文本的 MIME 类型是 “application/json”</p>
+<hr>
+<p><strong>把 JSON 文本转换为 JavaScript 对象</strong></p>
+<p>JSON 最常见的用法之一，是从 web 服务器上读取 JSON 数据（作为文件或作为 HttpRequest），将 JSON 数据转换为 JavaScript 对象，然后在网页中使用该数据。</p>
+<p>为了更简单地为您讲解，我们使用字符串作为输入进行演示（而不是文件）。</p>
+<p><strong>JSON 实例 - 来自字符串的对象</strong></p>
+<p>创建包含 JSON 语法的 JavaScript 字符串：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var txt = &apos;&#123; &quot;employees&quot; : [&apos; +</span><br><span class="line">&apos;&#123; &quot;firstName&quot;:&quot;Bill&quot; , &quot;lastName&quot;:&quot;Gates&quot; &#125;,&apos; +</span><br><span class="line">&apos;&#123; &quot;firstName&quot;:&quot;George&quot; , &quot;lastName&quot;:&quot;Bush&quot; &#125;,&apos; +</span><br><span class="line">&apos;&#123; &quot;firstName&quot;:&quot;Thomas&quot; , &quot;lastName&quot;:&quot;Carter&quot; &#125; ]&#125;&apos;;</span><br></pre></td></tr></table></figure>
+<p>由于 JSON 语法是 JavaScript 语法的子集，JavaScript 函数 eval() 可用于将 JSON 文本转换为 JavaScript 对象。</p>
+<p>eval() 函数使用的是 JavaScript 编译器，可解析 JSON 文本，然后生成 JavaScript 对象。必须把文本包围在括号中，这样才能避免语法错误：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var obj = eval (&quot;(&quot; + txt + &quot;)&quot;);</span><br></pre></td></tr></table></figure>
+<p>在网页中使用 JavaScript 对象：</p>
+<p><strong>例子</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">First Name: &lt;span id=&quot;fname&quot;&gt;&lt;/span&gt;&lt;br /&gt;</span><br><span class="line">Last Name: &lt;span id=&quot;lname&quot;&gt;&lt;/span&gt;&lt;br /&gt;</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">document.getElementById(&quot;fname&quot;).innerHTML = obj.employees[1].firstName</span><br><span class="line">document.getElementById(&quot;lname&quot;).innerHTML = obj.employees[1].lastName</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>JSON 解析器</strong></p>
+<p><strong>提示：</strong>eval() 函数可编译并执行任何 JavaScript 代码。这隐藏了一个潜在的安全问题。</p>
+<p>使用 JSON 解析器将 JSON 转换为 JavaScript 对象是更安全的做法。JSON 解析器只能识别 JSON 文本，而不会编译脚本。</p>
+<p>在浏览器中，这提供了原生的 JSON 支持，而且 JSON 解析器的速度更快。</p>
+<p>较新的浏览器和最新的 ECMAScript (JavaScript) 标准中均包含了原生的对 JSON 的支持。</p>
+<p><img src="http://olfa3o6q1.bkt.clouddn.com/HTML5-7.jpg" alt=""></p>
 
       
     </div>
@@ -547,35 +647,6 @@
     <div>
           
             
-<div class="my_post_copyright">
-  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-  <!-- JS库 sweetalert 可修改路径 -->
-  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/04/15/JSON入门/">JSON入门</a></p>
-  <p><span>文章作者:</span><a href="/" title="访问 Wong Zhen 的个人博客">Wong Zhen</a></p>
-  <p><span>发布时间:</span>2018年04月15日 - 21:04</p>
-  <p><span>最后更新:</span>2018年04月15日 - 22:04</p>
-  <p><span>原始链接:</span><a href="/2018/04/15/JSON入门/" title="JSON入门">http://wongzhen.com/2018/04/15/JSON入门/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://wongzhen.com/2018/04/15/JSON入门/"  aria-label="复制成功！"></i></span>
-  </p>
-  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>
-</div>
-<script>
-    var clipboard = new Clipboard('.fa-clipboard');
-    $(".fa-clipboard").click(function(){
-      clipboard.on('success', function(){
-        swal({
-          title: "",
-          text: '复制成功',
-          icon: "success",
-          showConfirmButton: true
-          });
-	});
-    });
-</script>
-
 
           
     </div>
@@ -931,7 +1002,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共18.7k字</span>
+  <span class="post-count">博客全站共19.7k字</span>
 </div>
 
         
