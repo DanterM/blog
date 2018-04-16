@@ -144,7 +144,8 @@
 <meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/HTML5-3.jpg">
 <meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/HTML5-4.jpg">
 <meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/HTML5-5.jpg">
-<meta property="og:updated_time" content="2018-04-16T07:12:02.258Z">
+<meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/HTML5-6.jpg">
+<meta property="og:updated_time" content="2018-04-16T07:15:45.538Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML5知识点汇总">
 <meta name="twitter:description" content="注：本博客版权所有为W3Cschool，这篇博客的诞生的原因仅是为了边学习边整理而且方便复习。 HTML5教程 HTML5 是 W3C 与 WHATWG 合作的结果。 W3C 指 World Wide Web Consortium，万维网联盟。 WHATWG 指 Web Hypertext Application Technology Working Group。 WHATWG 致力于 web">
@@ -476,7 +477,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  5,790
+                  6,363
                 </span>
               
 
@@ -492,7 +493,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  24
+                  26
                 </span>
               
             </div>
@@ -909,6 +910,44 @@
 <li>document 对象</li>
 <li>parent 对象</li>
 </ul>
+<h5 id="十一、HTML-5-服务器发送事件"><a href="#十一、HTML-5-服务器发送事件" class="headerlink" title="十一、HTML 5 服务器发送事件"></a>十一、HTML 5 服务器发送事件</h5><p><strong>HTML5 服务器发送事件（server-sent event）允许网页获得来自服务器的更新。</strong></p>
+<hr>
+<p><strong>Server-Sent 事件 - 单向消息传递</strong></p>
+<p>Server-Sent 事件指的是网页自动获取来自服务器的更新。</p>
+<p>以前也可能做到这一点，前提是网页不得不询问是否有可用的更新。通过服务器发送事件，更新能够自动到达。</p>
+<p>例子：Facebook/Twitter 更新、估价更新、新的博文、赛事结果等。</p>
+<hr>
+<p><strong>浏览器支持</strong><br>所有主流浏览器均支持服务器发送事件，除了 Internet Explorer。</p>
+<hr>
+<p><strong>接收 Server-Sent 事件通知</strong><br>EventSource 对象用于接收服务器发送事件通知：</p>
+<p><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var source=new EventSource(&quot;demo_sse.php&quot;);</span><br><span class="line">source.onmessage=function(event)</span><br><span class="line">  &#123;</span><br><span class="line">  document.getElementById(&quot;result&quot;).innerHTML+=event.data + &quot;&lt;br /&gt;&quot;;</span><br><span class="line">  &#125;;</span><br></pre></td></tr></table></figure>
+<p>例子解释：</p>
+<ul>
+<li>创建一个新的 EventSource 对象，然后规定发送更新的页面的 URL（本例中是 “demo_sse.php”）</li>
+<li>每接收到一次更新，就会发生 onmessage 事件</li>
+<li>当 onmessage 事件发生时，把已接收的数据推入 id 为 “result” 的元素中</li>
+</ul>
+<hr>
+<p><strong>检测 Server-Sent 事件支持</strong></p>
+<p>在上面的 TIY 实例中，我们编写了一段额外的代码来检测服务器发送事件的浏览器支持情况：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">if(typeof(EventSource)!==&quot;undefined&quot;)</span><br><span class="line">  &#123;</span><br><span class="line">  // Yes! Server-sent events support!</span><br><span class="line">  // Some code.....</span><br><span class="line">  &#125;</span><br><span class="line">else</span><br><span class="line">  &#123;</span><br><span class="line">  // Sorry! No server-sent events support..</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>服务器端代码实例</strong><br>为了让上面的例子可以运行，您还需要能够发送数据更新的服务器（比如 PHP 和 ASP）。</p>
+<p>服务器端事件流的语法是非常简单的。把 “Content-Type” 报头设置为 “text/event-stream”。现在，您可以开始发送事件流了。</p>
+<p><strong>PHP 代码 (demo_sse.php)：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">header(&apos;Content-Type: text/event-stream&apos;);</span><br><span class="line">header(&apos;Cache-Control: no-cache&apos;);</span><br><span class="line"></span><br><span class="line">$time = date(&apos;r&apos;);</span><br><span class="line">echo &quot;data: The server time is: &#123;$time&#125;\n\n&quot;;</span><br><span class="line">flush();</span><br><span class="line">?&gt;</span><br><span class="line">ASP 代码 (VB) (demo_sse.asp):</span><br><span class="line">&lt;%</span><br><span class="line">Response.ContentType=&quot;text/event-stream&quot;</span><br><span class="line">Response.Expires=-1</span><br><span class="line">Response.Write(&quot;data: &quot; &amp; now())</span><br><span class="line">Response.Flush()</span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
+<p>代码解释：</p>
+<ul>
+<li>把报头 “Content-Type” 设置为 “text/event-stream”</li>
+<li>规定不对页面进行缓存</li>
+<li>输出发送日期（始终以 “data: “ 开头）</li>
+<li>向网页刷新输出数据</li>
+</ul>
+<hr>
+<p><strong>EventSource 对象</strong></p>
+<p>在上面的例子中，我们使用 onmessage 事件来获取消息。不过还可以使用其他事件：</p>
+<p><img src="http://olfa3o6q1.bkt.clouddn.com/HTML5-6.jpg" alt=""></p>
 
       
     </div>
@@ -1242,7 +1281,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML5教程"><span class="nav-number">1.</span> <span class="nav-text">HTML5教程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、HTML5-视频"><span class="nav-number">1.1.</span> <span class="nav-text">一、HTML5 视频</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、HTML5-音频"><span class="nav-number">1.2.</span> <span class="nav-text">二、HTML5 音频</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、HTML-5-拖放"><span class="nav-number">1.3.</span> <span class="nav-text">三、HTML 5 拖放</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、HTML-5-Canvas"><span class="nav-number">1.4.</span> <span class="nav-text">四、HTML 5 Canvas</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#五、HTML5-内联-SVG"><span class="nav-number">1.5.</span> <span class="nav-text">五、HTML5 内联 SVG</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#六、HTML-5-Canvas-vs-SVG"><span class="nav-number">1.6.</span> <span class="nav-text">六、HTML 5 Canvas vs. SVG</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#七、HTML5-地理定位"><span class="nav-number">1.7.</span> <span class="nav-text">七、HTML5 地理定位</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#八、HTML-5-Web-存储"><span class="nav-number">1.8.</span> <span class="nav-text">八、HTML 5 Web 存储</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#九、HTML-5-应用程序缓存"><span class="nav-number">1.8.1.</span> <span class="nav-text">九、HTML 5 应用程序缓存</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#十、HTML-5-Web-Workers"><span class="nav-number">1.8.2.</span> <span class="nav-text">十、HTML 5 Web Workers</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML5教程"><span class="nav-number">1.</span> <span class="nav-text">HTML5教程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、HTML5-视频"><span class="nav-number">1.1.</span> <span class="nav-text">一、HTML5 视频</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、HTML5-音频"><span class="nav-number">1.2.</span> <span class="nav-text">二、HTML5 音频</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、HTML-5-拖放"><span class="nav-number">1.3.</span> <span class="nav-text">三、HTML 5 拖放</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、HTML-5-Canvas"><span class="nav-number">1.4.</span> <span class="nav-text">四、HTML 5 Canvas</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#五、HTML5-内联-SVG"><span class="nav-number">1.5.</span> <span class="nav-text">五、HTML5 内联 SVG</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#六、HTML-5-Canvas-vs-SVG"><span class="nav-number">1.6.</span> <span class="nav-text">六、HTML 5 Canvas vs. SVG</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#七、HTML5-地理定位"><span class="nav-number">1.7.</span> <span class="nav-text">七、HTML5 地理定位</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#八、HTML-5-Web-存储"><span class="nav-number">1.8.</span> <span class="nav-text">八、HTML 5 Web 存储</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#九、HTML-5-应用程序缓存"><span class="nav-number">1.8.1.</span> <span class="nav-text">九、HTML 5 应用程序缓存</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#十、HTML-5-Web-Workers"><span class="nav-number">1.8.2.</span> <span class="nav-text">十、HTML 5 Web Workers</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#十一、HTML-5-服务器发送事件"><span class="nav-number">1.8.3.</span> <span class="nav-text">十一、HTML 5 服务器发送事件</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -1293,7 +1332,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共18.1k字</span>
+  <span class="post-count">博客全站共18.7k字</span>
 </div>
 
         
