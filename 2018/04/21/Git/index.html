@@ -144,7 +144,18 @@
 <meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243733662876.jpg">
 <meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243736655009.jpg">
 <meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243737550494.jpg">
-<meta property="og:updated_time" content="2018-04-22T05:54:53.433Z">
+<meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243785613801.jpg">
+<meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243786397636.jpg">
+<meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243786673719.jpg">
+<meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243786810270.jpg">
+<meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243786932714.jpg">
+<meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243787065410.jpg">
+<meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243787763900.jpg">
+<meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243794415590.jpg">
+<meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243795064725.jpg">
+<meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243800598827.jpg">
+<meta property="og:image" content="http://wongzhen.com/2018/04/21/Git/media/15243800780738.jpg">
+<meta property="og:updated_time" content="2018-04-22T06:56:37.257Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git">
 <meta name="twitter:description" content="选自廖雪峰的官方网站 一、创建版本库1、创建空目录1234$ mkdir learngit$ cd learngit$ pwd/Users/Jarvis/learngit pwd命令用于显示当前目录，在Mac上，仓库位于/Users/Jarvis/learngit 2、git init12$ git initInitialized empty Git repository in /Users/J">
@@ -454,7 +465,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  7,247
+                  10,299
                 </span>
               
 
@@ -470,7 +481,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  28
+                  41
                 </span>
               
             </div>
@@ -666,7 +677,139 @@
 <p>关联后，使用命令<code>git push -u origin master</code>第一次推送master分支的所有内容；</p>
 <p>此后，每次本地提交后，只要有必要，就可以使用命令<code>git push origin master</code>推送最新修改；</p>
 <p>分布式版本系统的最大好处之一是在本地工作完全不需要考虑远程库的存在，也就是有没有联网都可以正常工作，而SVN在没有联网的时候是拒绝干活的！当有网络的时候，再把本地提交推送一下就完成了同步，真是太方便了！</p>
-<h5 id="2、从远程库克隆"><a href="#2、从远程库克隆" class="headerlink" title="2、从远程库克隆"></a>2、从远程库克隆</h5><h4 id="四、分支管理"><a href="#四、分支管理" class="headerlink" title="四、分支管理"></a>四、分支管理</h4><h5 id="1、创建与合并分支"><a href="#1、创建与合并分支" class="headerlink" title="1、创建与合并分支"></a>1、创建与合并分支</h5><h5 id="2、解决冲突"><a href="#2、解决冲突" class="headerlink" title="2、解决冲突"></a>2、解决冲突</h5><h5 id="3、分支管理策略"><a href="#3、分支管理策略" class="headerlink" title="3、分支管理策略"></a>3、分支管理策略</h5><h5 id="4、Bug分支"><a href="#4、Bug分支" class="headerlink" title="4、Bug分支"></a>4、Bug分支</h5><h5 id="5、Feature分支"><a href="#5、Feature分支" class="headerlink" title="5、Feature分支"></a>5、Feature分支</h5><h5 id="6、多人协作"><a href="#6、多人协作" class="headerlink" title="6、多人协作"></a>6、多人协作</h5><h4 id="五、标签管理"><a href="#五、标签管理" class="headerlink" title="五、标签管理"></a>五、标签管理</h4><h5 id="1、创建标签"><a href="#1、创建标签" class="headerlink" title="1、创建标签"></a>1、创建标签</h5><h5 id="2、操作标签"><a href="#2、操作标签" class="headerlink" title="2、操作标签"></a>2、操作标签</h5><h4 id="六、使用Github"><a href="#六、使用Github" class="headerlink" title="六、使用Github"></a>六、使用Github</h4><h4 id="七、使用码云"><a href="#七、使用码云" class="headerlink" title="七、使用码云"></a>七、使用码云</h4><h4 id="八、自定义Git"><a href="#八、自定义Git" class="headerlink" title="八、自定义Git"></a>八、自定义Git</h4><h5 id="1、忽略特殊文件"><a href="#1、忽略特殊文件" class="headerlink" title="1、忽略特殊文件"></a>1、忽略特殊文件</h5><h5 id="2、配置别名"><a href="#2、配置别名" class="headerlink" title="2、配置别名"></a>2、配置别名</h5><h5 id="3、搭建Git服务器"><a href="#3、搭建Git服务器" class="headerlink" title="3、搭建Git服务器"></a>3、搭建Git服务器</h5>
+<h5 id="2、从远程库克隆"><a href="#2、从远程库克隆" class="headerlink" title="2、从远程库克隆"></a>2、从远程库克隆</h5><p>现在，假设我们从零开发，那么最好的方式是先创建远程库，然后，从远程库克隆。</p>
+<p>首先，登陆GitHub，创建一个新的仓库，名字叫<code>gitskills</code>，我们勾选Initialize this repository with a README，这样GitHub会自动为我们创建一个README.md文件。创建完毕后，可以看到README.md文件。</p>
+<p>现在，远程库已经准备好了，下一步是用命令<code>git clone</code>克隆一个本地库：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git clone git@github.com:xxxxxx/gitskills.git</span><br><span class="line">Cloning into &apos;gitskills&apos;...</span><br><span class="line">remote: Counting objects: 3, done.</span><br><span class="line">remote: Total 3 (delta 0), reused 0 (delta 0)</span><br><span class="line">Receiving objects: 100% (3/3), done.</span><br><span class="line"></span><br><span class="line">$ cd gitskills</span><br><span class="line">$ ls</span><br><span class="line">README.md</span><br></pre></td></tr></table></figure>
+<p>注意把Git库的地址换成你自己的，然后进入<code>gitskills</code>目录看看，已经有README.md文件了。</p>
+<p>如果有多个人协作开发，那么每个人各自从远程克隆一份就可以了。</p>
+<p>你也许还注意到，GitHub给出的地址不止一个，还可以用<code>https://github.com/xxxxxx/gitskills.git</code>这样的地址。实际上，Git支持多种协议，默认的git://使用ssh，但也可以使用https等其他协议。</p>
+<p>使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用ssh协议而只能用https。</p>
+<p><strong>小结</strong><br>要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。</p>
+<p>Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。</p>
+<h4 id="四、分支管理"><a href="#四、分支管理" class="headerlink" title="四、分支管理"></a>四、分支管理</h4><p>分支就是科幻电影里面的平行宇宙，当你正在电脑前努力学习Git的时候，另一个你正在另一个平行宇宙里努力学习SVN。</p>
+<p>如果两个平行宇宙互不干扰，那对现在的你也没啥影响。不过，在某个时间点，两个平行宇宙合并了，结果，你既学会了Git又学会了SVN！</p>
+<p><img src="media/15243785613801.jpg" alt=""></p>
+<p>分支在实际中有什么用呢？假设你准备开发一个新功能，但是需要两周才能完成，第一周你写了50%的代码，如果立刻提交，由于代码还没写完，不完整的代码库会导致别人不能干活了。如果等代码全部写完再一次提交，又存在丢失每天进度的巨大风险。</p>
+<p>现在有了分支，就不用怕了。你创建了一个属于你自己的分支，别人看不到，还继续在原来的分支上正常工作，而你在自己的分支上干活，想提交就提交，直到开发完毕后，再一次性合并到原来的分支上，这样，既安全，又不影响别人工作。</p>
+<p>其他版本控制系统如SVN等都有分支管理，但是用过之后你会发现，这些版本控制系统创建和切换分支比蜗牛还慢，简直让人无法忍受，结果分支功能成了摆设，大家都不去用。</p>
+<p>但Git的分支是与众不同的，无论创建、切换和删除分支，Git在1秒钟之内就能完成！无论你的版本库是1个文件还是1万个文件。</p>
+<h5 id="1、创建与合并分支"><a href="#1、创建与合并分支" class="headerlink" title="1、创建与合并分支"></a>1、创建与合并分支</h5><p>在版本回退里，你已经知道，每次提交，Git都把它们串成一条时间线，这条时间线就是一个分支。截止到目前，只有一条时间线，在Git里，这个分支叫主分支，即master分支。HEAD严格来说不是指向提交，而是指向master，master才是指向提交的，所以，HEAD指向的就是当前分支。</p>
+<p>一开始的时候，master分支是一条线，Git用master指向最新的提交，再用HEAD指向master，就能确定当前分支，以及当前分支的提交点：</p>
+<p><img src="media/15243786397636.jpg" alt=""></p>
+<p>每次提交，master分支都会向前移动一步，这样，随着你不断提交，master分支的线也越来越长。</p>
+<p>当我们创建新的分支，例如dev时，Git新建了一个指针叫dev，指向master相同的提交，再把HEAD指向dev，就表示当前分支在dev上：</p>
+<p><img src="media/15243786673719.jpg" alt=""></p>
+<p>你看，Git创建一个分支很快，因为除了增加一个dev指针，改改HEAD的指向，工作区的文件都没有任何变化！</p>
+<p>不过，从现在开始，对工作区的修改和提交就是针对dev分支了，比如新提交一次后，dev指针往前移动一步，而master指针不变：</p>
+<p><img src="media/15243786810270.jpg" alt=""></p>
+<p>假如我们在dev上的工作完成了，就可以把dev合并到master上。Git怎么合并呢？最简单的方法，就是直接把master指向dev的当前提交，就完成了合并：<img src="media/15243786932714.jpg" alt=""></p>
+<p>所以Git合并分支也很快！就改改指针，工作区内容也不变！</p>
+<p>合并完分支后，甚至可以删除dev分支。删除dev分支就是把dev指针给删掉，删掉后，我们就剩下了一条master分支：</p>
+<p><img src="media/15243787065410.jpg" alt=""></p>
+<p>真是太神奇了，你看得出来有些提交是通过分支完成的吗？</p>
+<p><strong>下面开始实战。</strong></p>
+<p>首先，我们创建dev分支，然后切换到dev分支：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b dev</span><br><span class="line">Switched to a new branch &apos;dev&apos;</span><br></pre></td></tr></table></figure>
+<p>git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git branch dev</span><br><span class="line">$ git checkout dev</span><br><span class="line">Switched to branch &apos;dev&apos;</span><br></pre></td></tr></table></figure>
+<p>然后，用git branch命令查看当前分支：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">* dev</span><br><span class="line">  master</span><br></pre></td></tr></table></figure>
+<p>git branch命令会列出所有分支，当前分支前面会标一个*号。</p>
+<p>然后，我们就可以在dev分支上正常提交，比如对readme.txt做个修改，加上一行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Creating a new branch is quick.</span><br></pre></td></tr></table></figure>
+<p>然后提交：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add readme.txt </span><br><span class="line">$ git commit -m &quot;branch test&quot;</span><br><span class="line">[dev fec145a] branch test</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br></pre></td></tr></table></figure>
+<p>现在，dev分支的工作完成，我们就可以切换回master分支：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br><span class="line">Switched to branch &apos;master&apos;</span><br></pre></td></tr></table></figure>
+<p>切换回master分支后，再查看一个readme.txt文件，刚才添加的内容不见了！因为那个提交是在dev分支上，而master分支此刻的提交点并没有变：</p>
+<p><img src="media/15243787763900.jpg" alt=""></p>
+<p>现在，我们把dev分支的工作成果合并到master分支上：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git merge dev</span><br><span class="line">Updating d17efd8..fec145a</span><br><span class="line">Fast-forward</span><br><span class="line"> readme.txt |    1 +</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br></pre></td></tr></table></figure>
+<p>git merge命令用于合并指定分支到当前分支。合并后，再查看readme.txt的内容，就可以看到，和dev分支的最新提交是完全一样的。</p>
+<p>注意到上面的Fast-forward信息，Git告诉我们，这次合并是“快进模式”，也就是直接把master指向dev的当前提交，所以合并速度非常快。</p>
+<p>当然，也不是每次合并都能Fast-forward，我们后面会讲其他方式的合并。</p>
+<p>合并完成后，就可以放心地删除dev分支了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d dev</span><br><span class="line">Deleted branch dev (was fec145a).</span><br></pre></td></tr></table></figure>
+<p>删除后，查看branch，就只剩下master分支了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">* master</span><br></pre></td></tr></table></figure>
+<p>因为创建、合并和删除分支非常快，所以Git鼓励你使用分支完成某个任务，合并后再删掉分支，这和直接在master分支上工作效果是一样的，但过程更安全。</p>
+<p><strong>小结</strong><br>Git鼓励大量使用分支：</p>
+<ul>
+<li><p>查看分支：<code>git branch</code></p>
+</li>
+<li><p>创建分支：<code>git branch &lt;name&gt;</code></p>
+</li>
+<li><p>切换分支：<code>git checkout &lt;name&gt;</code></p>
+</li>
+<li><p>创建+切换分支：<code>git checkout -b &lt;name&gt;</code></p>
+</li>
+<li><p>合并某分支到当前分支：<code>git merge &lt;name&gt;</code></p>
+</li>
+<li><p>删除分支：<code>git branch -d &lt;name&gt;</code></p>
+</li>
+</ul>
+<h5 id="2、解决冲突"><a href="#2、解决冲突" class="headerlink" title="2、解决冲突"></a>2、解决冲突</h5><p>人生不如意之事十之八九，合并分支往往也不是一帆风顺的。</p>
+<p>准备新的feature1分支，继续我们的新分支开发：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b feature1</span><br><span class="line">Switched to a new branch &apos;feature1&apos;</span><br></pre></td></tr></table></figure>
+<p>修改readme.txt最后一行，改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Creating a new branch is quick AND simple.</span><br></pre></td></tr></table></figure>
+<p>在feature1分支上提交：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add readme.txt </span><br><span class="line">$ git commit -m &quot;AND simple&quot;</span><br><span class="line">[feature1 75a857c] AND simple</span><br><span class="line"> 1 file changed, 1 insertion(+), 1 deletion(-)</span><br></pre></td></tr></table></figure>
+<p>切换到master分支：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br><span class="line">Switched to branch &apos;master&apos;</span><br><span class="line">Your branch is ahead of &apos;origin/master&apos; by 1 commit.</span><br></pre></td></tr></table></figure>
+<p>Git还会自动提示我们当前master分支比远程的master分支要超前1个提交。</p>
+<p>在master分支上把readme.txt文件的最后一行改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Creating a new branch is quick &amp; simple.</span><br></pre></td></tr></table></figure>
+<p>提交：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add readme.txt </span><br><span class="line">$ git commit -m &quot;&amp; simple&quot;</span><br><span class="line">[master 400b400] &amp; simple</span><br><span class="line"> 1 file changed, 1 insertion(+), 1 deletion(-)</span><br></pre></td></tr></table></figure>
+<p>现在，master分支和feature1分支各自都分别有新的提交，变成了这样：</p>
+<p><img src="media/15243794415590.jpg" alt=""></p>
+<p>这种情况下，Git无法执行“快速合并”，只能试图把各自的修改合并起来，但这种合并就可能会有冲突，我们试试看：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git merge feature1</span><br><span class="line">Auto-merging readme.txt</span><br><span class="line">CONFLICT (content): Merge conflict in readme.txt</span><br><span class="line">Automatic merge failed; fix conflicts and then commit the result.</span><br></pre></td></tr></table></figure>
+<p>果然冲突了！Git告诉我们，readme.txt文件存在冲突，必须手动解决冲突后再提交。git status也可以告诉我们冲突的文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line"># On branch master</span><br><span class="line"># Your branch is ahead of &apos;origin/master&apos; by 2 commits.</span><br><span class="line">#</span><br><span class="line"># Unmerged paths:</span><br><span class="line">#   (use &quot;git add/rm &lt;file&gt;...&quot; as appropriate to mark resolution)</span><br><span class="line">#</span><br><span class="line">#       both modified:      readme.txt</span><br><span class="line">#</span><br><span class="line">no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</span><br></pre></td></tr></table></figure>
+<p>我们可以直接查看readme.txt的内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Git is a distributed version control system.</span><br><span class="line">Git is free software distributed under the GPL.</span><br><span class="line">Git has a mutable index called stage.</span><br><span class="line">Git tracks changes of files.</span><br><span class="line">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span><br><span class="line">Creating a new branch is quick &amp; simple.</span><br><span class="line">=======</span><br><span class="line">Creating a new branch is quick AND simple.</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature1</span><br></pre></td></tr></table></figure>
+<p>Git用<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>，<code>=======</code>，<code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>标记出不同分支的内容，我们修改如下后保存：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Creating a new branch is quick and simple.</span><br></pre></td></tr></table></figure>
+<p>再提交：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add readme.txt </span><br><span class="line">$ git commit -m &quot;conflict fixed&quot;</span><br><span class="line">[master 59bc1cb] conflict fixed</span><br></pre></td></tr></table></figure>
+<p>现在，master分支和feature1分支变成了下图所示：</p>
+<p><img src="media/15243795064725.jpg" alt=""></p>
+<p>用带参数的git log也可以看到分支的合并情况：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git log --graph --pretty=oneline --abbrev-commit</span><br><span class="line">*   59bc1cb conflict fixed</span><br><span class="line">|\</span><br><span class="line">| * 75a857c AND simple</span><br><span class="line">* | 400b400 &amp; simple</span><br><span class="line">|/</span><br><span class="line">* fec145a branch test</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>最后，删除feature1分支：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d feature1</span><br><span class="line">Deleted branch feature1 (was 75a857c).</span><br></pre></td></tr></table></figure>
+<p>工作完成。</p>
+<p><strong>小结</strong><br>当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。</p>
+<p>用<code>git log --graph</code>命令可以看到分支合并图。</p>
+<h5 id="3、分支管理策略"><a href="#3、分支管理策略" class="headerlink" title="3、分支管理策略"></a>3、分支管理策略</h5><p>通常，合并分支时，如果可能，Git会用<code>Fast forward</code>模式，但这种模式下，删除分支后，会丢掉分支信息。</p>
+<p>如果要强制禁用<code>Fast forward</code>模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。</p>
+<p>下面我们实战一下<code>--no-ff</code>方式的<code>git merge</code>：</p>
+<p>首先，仍然创建并切换dev分支：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b dev</span><br><span class="line">Switched to a new branch &apos;dev&apos;</span><br></pre></td></tr></table></figure>
+<p>修改readme.txt文件，并提交一个新的commit：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add readme.txt </span><br><span class="line">$ git commit -m &quot;add merge&quot;</span><br><span class="line">[dev 6224937] add merge</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br></pre></td></tr></table></figure>
+<p>现在，我们切换回<code>master</code>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br><span class="line">Switched to branch &apos;master&apos;</span><br></pre></td></tr></table></figure>
+<p>准备合并<code>dev</code>分支，请注意<code>--no-ff</code>参数，表示禁用<code>Fast forward</code>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git merge --no-ff -m &quot;merge with no-ff&quot; dev</span><br><span class="line">Merge made by the &apos;recursive&apos; strategy.</span><br><span class="line"> readme.txt |    1 +</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br></pre></td></tr></table></figure>
+<p>因为本次合并要创建一个新的commit，所以加上<code>-m</code>参数，把commit描述写进去。</p>
+<p>合并后，我们用<code>git log</code>看看分支历史：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git log --graph --pretty=oneline --abbrev-commit</span><br><span class="line">*   7825a50 merge with no-ff</span><br><span class="line">|\</span><br><span class="line">| * 6224937 add merge</span><br><span class="line">|/</span><br><span class="line">*   59bc1cb conflict fixed</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>可以看到，不使用<code>Fast forward</code>模式，merge后就像这样：</p>
+<p><img src="media/15243800598827.jpg" alt=""></p>
+<p><strong>分支策略</strong></p>
+<p>在实际开发中，我们应该按照几个基本原则进行分支管理：</p>
+<p>首先，<code>master</code>分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；</p>
+<p>那在哪干活呢？干活都在<code>dev</code>分支上，也就是说，<code>dev</code>分支是不稳定的，到某个时候，比如1.0版本发布时，再把<code>dev</code>分支合并到<code>master</code>上，在<code>master</code>分支发布1.0版本；</p>
+<p>你和你的小伙伴们每个人都在<code>dev</code>分支上干活，每个人都有自己的分支，时不时地往<code>dev</code>分支上合并就可以了。</p>
+<p>所以，团队合作的分支看起来就像这样：</p>
+<p><img src="media/15243800780738.jpg" alt=""></p>
+<p><strong>小结</strong><br>Git分支十分强大，在团队开发中应该充分应用。</p>
+<p>合并分支时，加上<code>--no-ff</code>参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而<code>fast forward</code>合并就看不出来曾经做过合并。</p>
+<h5 id="4、Bug分支"><a href="#4、Bug分支" class="headerlink" title="4、Bug分支"></a>4、Bug分支</h5><h5 id="5、Feature分支"><a href="#5、Feature分支" class="headerlink" title="5、Feature分支"></a>5、Feature分支</h5><h5 id="6、多人协作"><a href="#6、多人协作" class="headerlink" title="6、多人协作"></a>6、多人协作</h5><h4 id="五、标签管理"><a href="#五、标签管理" class="headerlink" title="五、标签管理"></a>五、标签管理</h4><h5 id="1、创建标签"><a href="#1、创建标签" class="headerlink" title="1、创建标签"></a>1、创建标签</h5><h5 id="2、操作标签"><a href="#2、操作标签" class="headerlink" title="2、操作标签"></a>2、操作标签</h5><h4 id="六、使用Github"><a href="#六、使用Github" class="headerlink" title="六、使用Github"></a>六、使用Github</h4><h4 id="七、使用码云"><a href="#七、使用码云" class="headerlink" title="七、使用码云"></a>七、使用码云</h4><h4 id="八、自定义Git"><a href="#八、自定义Git" class="headerlink" title="八、自定义Git"></a>八、自定义Git</h4><h5 id="1、忽略特殊文件"><a href="#1、忽略特殊文件" class="headerlink" title="1、忽略特殊文件"></a>1、忽略特殊文件</h5><h5 id="2、配置别名"><a href="#2、配置别名" class="headerlink" title="2、配置别名"></a>2、配置别名</h5><h5 id="3、搭建Git服务器"><a href="#3、搭建Git服务器" class="headerlink" title="3、搭建Git服务器"></a>3、搭建Git服务器</h5>
       
     </div>
     
@@ -1046,7 +1189,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共31.5k字</span>
+  <span class="post-count">博客全站共34.5k字</span>
 </div>
 
         
