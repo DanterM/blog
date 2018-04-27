@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wongzhen.com/about/index.html</loc>
+    
+    <lastmod>2018-04-27T07:30:15.282Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wongzhen.com/music/index.html</loc>
     
     <lastmod>2018-04-27T07:24:11.121Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://wongzhen.com/2018/04/21/Git/</loc>
     
     <lastmod>2018-04-22T08:17:17.590Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wongzhen.com/about/index.html</loc>
-    
-    <lastmod>2018-04-17T09:41:03.093Z</lastmod>
     
   </url>
   
