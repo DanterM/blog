@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wongzhen.com/music/index.html</loc>
+    
+    <lastmod>2018-04-27T06:30:01.108Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wongzhen.com/2018/04/26/%E8%AF%84%E4%BB%B7%E5%87%BD%E6%95%B0/</loc>
     
     <lastmod>2018-04-27T06:12:49.187Z</lastmod>
@@ -110,13 +117,6 @@
     <loc>http://wongzhen.com/2018/03/12/Hexo%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E9%9F%B3%E4%B9%90%E8%A7%86%E9%A2%91/</loc>
     
     <lastmod>2018-03-12T07:06:50.917Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wongzhen.com/music/index.html</loc>
-    
-    <lastmod>2018-03-12T02:24:44.076Z</lastmod>
     
   </url>
   
