@@ -171,7 +171,7 @@
 <meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/%E4%B8%80%E9%9D%A232.png">
 <meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/%E4%B8%80%E9%9D%A233.png">
 <meta property="og:image" content="http://olfa3o6q1.bkt.clouddn.com/%E4%B8%80%E9%9D%A234.png">
-<meta property="og:updated_time" content="2018-04-15T03:19:15.497Z">
+<meta property="og:updated_time" content="2018-05-03T10:15:32.102Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试技巧总结（IMOOC）">
 <meta name="twitter:description" content="该博客总结慕课网-快乐动起来呀老师的前端面试技巧，还请读者跳转到课程主页购买观看。 关于面试 技术面试（技术方面） 负责人面试（技术、项目深度、项目架构、业务） HR面试（性格、沟通、潜力）  大概1-1.5小时 五大部分1、面试准备2、面试技巧3、题目演练4、知识梳理5、复习指导课程价值：  JD描述怎看 奖励怎么写 知识怎么复习 问题该怎么回答 项目怎么准备 和负责人怎么沟通 HR印象怎么留">
@@ -503,7 +503,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3,938
+                  4,497
                 </span>
               
 
@@ -519,7 +519,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  14
+                  16
                 </span>
               
             </div>
@@ -767,10 +767,14 @@ gulp（推荐） Sass less (两种预编译语言)npm  grunt browserify webpack
 <h5 id="通信类"><a href="#通信类" class="headerlink" title="通信类"></a>通信类</h5><p>什么是同源策略限制（3个）<br><img src="http://olfa3o6q1.bkt.clouddn.com/%E4%B8%80%E9%9D%A218.jpg" alt=""></p>
 <p>前后端如何通信（Ajax+。。。。一个不合格）</p>
 <ul>
-<li>Ajax</li>
-<li>WebSocket</li>
-<li>CORS</li>
+<li><p>Ajax</p>
+</li>
+<li><p>WebSocket</p>
+</li>
+<li><p>CORS</p>
+</li>
 </ul>
+<p>同域安全策略CORS（Cross-Origin Resource Sharing）是W3C在05年提出的跨域资源请求机制，它要求当前域（常规为存放资源的服务器）在响应报头添加Access-Control-Allow-Origin标签，从而允许指定域的站点访问当前域上的资源。</p>
 <p>如何创建Ajax</p>
 <ul>
 <li>XMLHttpRequest对象的工作流程</li>
@@ -781,9 +785,25 @@ gulp（推荐） Sass less (两种预编译语言)npm  grunt browserify webpack
 <p>跨域通信的几种方式!!!</p>
 <ul>
 <li>JSONP（原理、怎么实现的）</li>
+</ul>
+<p>这个实在用到烂大街了，提起跨域实现，其实最容易想到的就是它。JSONP(JSON with Padding)是JSON的一种“使用模式”，主要是利用script标签不受同源策略限制的特性，向跨域的服务器请求并返回一段JSON数据。</p>
+<p>常规前后端会约定好某个JSONP请求的callback名（比如随便起个名字“abc”），服务端返回的JSON数据会被这个callback名包裹起来，进而方便服务器区分收到的请求，也方便客户端区分其收到的响应数据。我们可以利用jQuery轻松实现JSONP</p>
+<p>不过JSONP始终是无状态连接，不能获悉连接状态和错误事件，而且只能走GET的形式。</p>
+<ul>
 <li>Hash</li>
-<li>postMessage(H5)</li>
+</ul>
+<p>location.hash/url hash 是个好东西，在之前我们曾利用avalon前端路由来实现简单的SPA页面（这篇文章），便是助力于location.hash。</p>
+<p>利用url地址改变但不刷新页面的特性（在url： <a href="http://a.com#hello" target="_blank" rel="noopener">http://a.com#hello</a> 中的 ‘#hello’ 就是location.hash，改变hash并不会导致页面刷新，所以可以利用hash值来进行数据传递）和iframe，我们可以实现跨域传递简单信息。</p>
+<ul>
+<li>Cross-document messaging(H5)</li>
+</ul>
+<p>在 Cross-document messaging 中，我们可以使用 <code>postMessage</code> 方法和 <code>onmessage</code> 事件来实现不同域之间的通信，其中postMessage用于实时向接收信息的页面发送消息，其语法为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">otherWindow.postMessage(message, targetOrigin);</span><br><span class="line"></span><br><span class="line">//otherWindow: 对接收信息页面的window的引用。可以是页面中iframe的contentWindow属性；</span><br><span class="line">//window.open的返回值；通过name或下标从window.frames取到的值。</span><br><span class="line">//message: 所要发送的数据，string类型。</span><br><span class="line">//targetOrigin: 允许通信的域的url，“*”表示不作限制。</span><br></pre></td></tr></table></figure>
+<ul>
 <li>WebSocket</li>
+</ul>
+<p>WebSocket protocol 是HTML5一种新的协议。它实现了浏览器与服务器全双工通信，同时允许跨域通讯，是server push技术的一种很棒的实现。</p>
+<ul>
 <li>CORS(新标准)</li>
 </ul>
 <h5 id="安全类"><a href="#安全类" class="headerlink" title="安全类"></a>安全类</h5><p><strong>CSRF</strong></p>
@@ -1169,7 +1189,7 @@ gulp（推荐） Sass less (两种预编译语言)npm  grunt browserify webpack
   <p><span>本文标题:</span><a href="/2018/04/10/前端面试/">前端面试技巧总结（IMOOC）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Wong Zhen 的个人博客">Wong Zhen</a></p>
   <p><span>发布时间:</span>2018年04月10日 - 17:04</p>
-  <p><span>最后更新:</span>2018年04月15日 - 11:04</p>
+  <p><span>最后更新:</span>2018年05月03日 - 18:05</p>
   <p><span>原始链接:</span><a href="/2018/04/10/前端面试/" title="前端面试技巧总结（IMOOC）">http://wongzhen.com/2018/04/10/前端面试/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://wongzhen.com/2018/04/10/前端面试/"  aria-label="复制成功！"></i></span>
   </p>
@@ -1548,7 +1568,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共39.6k字</span>
+  <span class="post-count">博客全站共40.2k字</span>
 </div>
 
         
