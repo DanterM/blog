@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>http://wongzhen.com/2018/05/18/RandomForestRegressor()%E5%8F%82%E6%95%B0/</loc>
+    <lastmod>2018-05-17T17:39:05.729Z</lastmod>
+    <data>
+        <display>
+        <title>RandomForestRegressor()参数</title>
+        <pubTime>2018-05-17T17:34:16.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="http://wongzhen.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wongzhen.com/2018/04/26/%E8%AF%84%E4%BB%B7%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2018-05-07T03:10:10.600Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习中的四种评价函数</title>
+        <pubTime>2018-04-26T00:48:25.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="http://wongzhen.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wongzhen.com/2018/04/10/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93%EF%BC%88IMOOC%EF%BC%89/</loc>
     <lastmod>2018-05-03T10:15:32.102Z</lastmod>
     <data>
@@ -39,26 +79,6 @@
            
              
               <breadCrumb title="Hexo" url="http://wongzhen.com/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wongzhen.com/2018/04/26/%E8%AF%84%E4%BB%B7%E5%87%BD%E6%95%B0/</loc>
-    <lastmod>2018-04-27T06:12:49.187Z</lastmod>
-    <data>
-        <display>
-        <title>机器学习中的四种评价函数</title>
-        <pubTime>2018-04-26T00:48:25.000Z</pubTime>
-        
-        <tag>机器学习</tag>
-         
-         
-           
-             
-              <breadCrumb title="机器学习" url="http://wongzhen.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
